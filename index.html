@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Taplink Clone</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="background"></div>
+        <div class="logo-container" id="logoContainer">
+          <img src="" alt="Logo" class="logo" id="logo">
+          <input type="file" id="logoUpload" accept="image/*" style="display: none;" />
+          <svg id="uploadIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="upload-icon">
+            <path d="M12 2L8 6h3v6h2V6h3l-4-4zm0 18c-5.52 0-10-4.48-10-10h2c0 4.41 3.59 8 8 8s8-3.59 8-8h2c0 5.52-4.48 10-10 10z"/>
+          </svg>
+        </div>
+        <div class="editable-field" id="nameField" contenteditable="true">Your Name</div>
+        <div class="editable-field description" id="descriptionField" contenteditable="true">Short bio or description</div>
+        <div class="links">
+          <a href="https://example.com" target="_blank">Link 1</a>
+          <a href="https://example.com" target="_blank">Link 2</a>
+          <a href="https://example.com" target="_blank">Link 3</a>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+    </html>
