@@ -91,9 +91,12 @@ body {
       margin-top: 20px;
     }
 
-    .links a {
-      display: block;
+    .button {
       margin: 10px 0;
+    }
+
+    .button-link {
+      display: inline-block;
       padding: 10px;
       background-color: #007bff;
       color: white;
@@ -101,6 +104,50 @@ body {
       border-radius: 5px;
     }
 
-    .links a:hover {
+    .button-link:hover {
+      background-color: #0056b3;
+    }
+
+    .edit-button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .side-menu {
+      position: absolute;
+      top: 20px;
+      right: -300px; /* Initially hidden */
+      width: 250px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      transition: right 0.3s ease; /* Smooth transition */
+    }
+
+    .side-menu.active {
+      right: 0; /* Show side menu */
+    }
+
+    #buttonText, #buttonLink {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #saveButton {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #saveButton:hover {
       background-color: #0056b3;
     }

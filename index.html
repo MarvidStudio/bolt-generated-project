@@ -18,10 +18,27 @@
         </div>
         <div class="editable-field" id="nameField" contenteditable="true">Your Name</div>
         <div class="editable-field description" id="descriptionField" contenteditable="true">Short bio or description</div>
-        <div class="links">
-          <a href="https://example.com" target="_blank">Link 1</a>
-          <a href="https://example.com" target="_blank">Link 2</a>
-          <a href="https://example.com" target="_blank">Link 3</a>
+        
+        <div class="links" id="buttonContainer">
+          <div class="button" id="button1">
+            <a href="https://example.com" target="_blank" class="button-link">Link 1</a>
+            <button class="edit-button" onclick="openEditMenu('button1')">Edit</button>
+          </div>
+          <div class="button" id="button2">
+            <a href="https://example.com" target="_blank" class="button-link">Link 2</a>
+            <button class="edit-button" onclick="openEditMenu('button2')">Edit</button>
+          </div>
+          <div class="button" id="button3">
+            <a href="https://example.com" target="_blank" class="button-link">Link 3</a>
+            <button class="edit-button" onclick="openEditMenu('button3')">Edit</button>
+          </div>
+        </div>
+
+        <div class="side-menu" id="sideMenu">
+          <h3>Edit Button</h3>
+          <input type="text" id="buttonText" placeholder="Button Text" />
+          <input type="text" id="buttonLink" placeholder="Button Link" />
+          <button id="saveButton">Save</button>
         </div>
       </div>
       <script src="script.js"></script>
